@@ -1,0 +1,126 @@
+/* Estilo general */
+body {
+    font-family: 'Press Start 2P', Arial, sans-serif; /* Fuente pixelada estilo arcade */
+    background: radial-gradient(circle, #1a1a1a, #000000); /* Fondo negro con degradado */
+    color: #ffffff; /* Texto general en blanco */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-shadow: 0 0 5px #ffaa00, 0 0 10px #ffaa00; /* Resplandor anaranjado */
+    font-weight: 300; /* Texto más delgado */
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #4d4d4d, #1a1a1a); /* Degradado gris oscuro a negro */
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #ffaa00;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 0 10px #ffaa00, 0 0 20px #ffaa00; /* Resplandor anaranjado */
+    animation: neon-glow 2s infinite alternate;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ffffff; /* Texto en blanco */
+    text-shadow: 0 0 5px #ffaa00, 0 0 10px #ffaa00; /* Resplandor anaranjado */
+    font-weight: 300; /* Texto más delgado */
+}
+
+/* Secciones */
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.9); /* Fondo negro translúcido */
+    box-shadow: 0 4px 8px rgba(255, 170, 0, 0.5); /* Sombra anaranjada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ffaa00; /* Borde anaranjado */
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 170, 0, 0.8); /* Sombra más intensa al pasar el cursor */
+}
+
+/* Títulos */
+h2 {
+    color: #ff7700; /* Color anaranjado más fuerte */
+    border-bottom: 3px solid #ffaa00; /* Línea inferior amarilla */
+    padding-bottom: 10px;
+    font-size: 1.8em; /* Tamaño ligeramente más grande */
+    text-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff; /* Resplandor blanco */
+    font-weight: bold; /* Mantener títulos destacados */
+}
+
+/* Galería */
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    border: 3px solid #ffaa00; /* Borde anaranjado */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 170, 0, 0.5); /* Sombra anaranjada */
+}
+
+/* Botón de descarga */
+.download a {
+    display: inline-block;
+    background: linear-gradient(90deg, #ffaa00, #ff7700); /* Degradado amarillo-anaranjado */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.2em;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 119, 0, 0.5); /* Sombra anaranjada */
+    text-shadow: 0 0 5px #fff, 0 0 10px #ffaa00; /* Resplandor amarillo */
+}
+
+.download a:hover {
+    background: linear-gradient(90deg, #ff7700, #ffaa00); /* Invertir degradado */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 119, 0, 0.8); /* Sombra más intensa */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background: #1a1a1a; /* Fondo gris oscuro */
+    padding: 20px;
+    font-size: 1em;
+    color: #ffffff; /* Texto en blanco */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    border-top: 5px solid #ffaa00;
+    font-weight: 300; /* Texto más delgado */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animación de resplandor */
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 10px #ffaa00, 0 0 20px #ff7700, 0 0 30px #ffaa00;
+    }
+    to {
+        text-shadow: 0 0 20px #ff7700, 0 0 30px #ffaa00, 0 0 40px #ff7700;
+    }
+}
