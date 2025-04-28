@@ -66,16 +66,18 @@ h2 {
 
 /* Galería */
 .gallery img {
-    width: 300px;
+    width: 400px; /* Aumenta el ancho */
+    height: 300px; /* Aumenta la altura */
+    object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
     margin: 10px;
     border: 3px solid #ffaa00; /* Borde anaranjado */
-    border-radius: 15px;
+    border-radius: 15px; /* Bordes redondeados */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(255, 170, 0, 0.5); /* Sombra anaranjada */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(255, 170, 0, 0.8); /* Sombra más intensa */
 }
 
 /* Botón de descarga */
