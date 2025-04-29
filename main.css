@@ -12,11 +12,19 @@ body {
 
 /* Encabezado */
 header {
+    display: flex; /* Activa Flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Separa los elementos horizontalmente */
     background: linear-gradient(90deg, #ff0000, #ffaa00); /* Degradado naranja a negro */
-    padding: 30px;
-    text-align: center;
+    padding: 20px 30px; /* Ajusta el relleno del encabezado */
     box-shadow: 0 6px 12px rgba(255, 119, 0, 0.8); /* Sombra más intensa */
     border-bottom: 5px solid #ffaa00;
+}
+
+/* Texto del encabezado */
+.header-text {
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
 }
 
 header h1 {
@@ -31,6 +39,13 @@ header p {
     color: #ffffff; /* Texto en blanco */
     text-shadow: 0 0 10px #ffaa00, 0 0 20px #ff7700; /* Resplandor más intenso */
     font-weight: 300; /* Texto más delgado */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+/* Logos izquierdo y derecho */
+.left-logo, .right-logo {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción */
 }
 
 /* Secciones */
@@ -197,6 +212,15 @@ footer p {
 .interactive-map:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
     box-shadow: 0 12px 24px rgba(255, 170, 0, 1); /* Sombra más intensa */
+}
+
+/* Logo ecológico */
+.eco-logo {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que se comporte como un bloque */
+    margin-left: auto; /* Centra horizontalmente */
+    align-self: flex-start; /* Mueve el logo hacia la parte superior */
 }
 
 /* Listas (incisos) */
